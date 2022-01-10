@@ -1,0 +1,6 @@
+{
+    "display_team_name": "Team Domene Subdomene",
+    "team_name": "{{ cookiecutter.display_team_name|lower|replace('team', '')|trim()|replace(' ', '-')|replace('_', '-')|replace('.', '') }}",
+    "project_name": "dapla-team-{{cookiecutter.team_name}}",
+    "enable_transfer_service": ["yes", "no"]
+}
