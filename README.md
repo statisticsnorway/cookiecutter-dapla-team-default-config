@@ -1,1 +1,2 @@
-# dapla-start-cookiecutter-config
+# cookiecutter-dapla-team-default-config
+
