@@ -1,0 +1,26 @@
+{
+  "display_team_name": {
+    "title": "Vis Teamnavn",
+    "description": "Team navn som skal vises som",
+    "type": "string"
+  },
+  "team_name": {
+    "title": "Team Navn" ,
+    "description": "",
+    "type": "string"
+  },
+  "project_name": {
+    "title": "Prosjekt Navn ",
+    "description": "",
+    "type": "string"
+  },
+  "enable_transfer_service": {
+    "title": "Aktiver Overføring Tjeneste",
+    "description": "",
+    "type": "array",
+    "items": {
+      "type": "string",
+      "enum": ["yes", "no"]
+    }
+  }
+}
