@@ -1,26 +1,27 @@
 {
   "display_team_name": {
-    "title": "Vis Teamnavn",
-    "description": "Team navn som skal vises som",
+    "title": "Teamnavn",
+    "description": "Teamets navn (f. eks: Team Brunost). <b>Dette kan ikke endres senere.</b> Det er OK å bruke store bokstaver og mellomrom her. Brukes kun for visning.",
     "type": "string"
   },
   "team_name": {
-    "title": "Team Navn" ,
-    "description": "",
-    "type": "string"
+    "title": "Teknisk teamnavn",
+    "description": "Utledet fra teamnavn ovenfor. Dette navnet vil bli brukt i forbindelse med opprettelse av ressurser og infrastruktur, f. eks som prefiks for AD-grupper, osv. <b>Dette kan ikke endres senere.</b>",
+    "type": "string",
+    "deduced": true
   },
   "project_name": {
-    "title": "Prosjekt Navn ",
-    "description": "",
-    "type": "string"
+    "title": "Prosjektnavn i GCP",
+    "description": "Teamets tekniske arbeidsområde i Google Cloud kalles for et prosjekt. <b>Dette kan ikke endres senere.</b> <a href=\"https://statistics-norway.atlassian.net/wiki/x/IICapw\">Se navnekonvensjon</a>",
+    "type": "string",
+    "deduced": true
   },
-  "enable_transfer_service": {
-    "title": "Aktiver Overføring Tjeneste",
-    "description": "",
-    "type": "array",
-    "items": {
-      "type": "string",
-      "enum": ["yes", "no"]
-    }
+  "enabled_services": {
+    "title": "Tjenester",
+    "description": "Velg tjenestene teamet har behov for. Det er mulig å legge til tjenester senere, men det er en fordel om du identifiserer de du trenger allerede nå. Dersom du er usikker, spør oss på <a href=\"https://ssb-norge.slack.com/archives/C015E7B4YS0\">#hjelp_dapla</a>",
+    "type": "checklist",
+    "items": [
+      {"label": "Transfer Service", "value": "transfer_service", "description": "Overføre filer mellom prodsonen og Dapla"}
+    ]
   }
 }
