@@ -2,18 +2,19 @@
   "display_team_name": {
     "title": "Teamnavn",
     "description": "Teamets navn (f. eks: Team Brunost). <b>Dette kan ikke endres senere.</b> Det er OK å bruke store bokstaver og mellomrom her. Brukes kun for visning.",
-    "help": "<p>Navnet på et Dapla-team bør reflektere <em>domene - subdomene</em>. Her er noen eksempler på eksisterende teamnavn:</p><ul><li>skatt-person</li><li>skatt-naering</li><li>kostra-kvm</li></ul>",
+    "help": "<p>Navnet på et Dapla-team bør reflektere <em>domene - subdomene</em>. Her er noen eksempler:</p><ul><li>Skatt Person</li><li>Skatt Næring</li><li>Kostra KVM</li></ul>",
     "type": "string"
   },
   "team_name": {
     "title": "Teknisk teamnavn",
-    "description": "Utledet fra teamnavn ovenfor. Dette navnet vil bli brukt i forbindelse med opprettelse av ressurser og infrastruktur, f. eks som prefiks for AD-grupper, osv. <b>Dette kan ikke endres senere.</b>",
+    "description": "Utledet fra teamnavn ovenfor <i>(kan ikke endres)</i>. Navnet vil bli brukt i forbindelse med opprettelse av ressurser og infrastruktur, f. eks som prefiks for AD-grupper, osv. <b>Dette kan ikke endres senere.</b>",
     "type": "string",
     "deduced": true
   },
   "project_name": {
-    "title": "Prosjektnavn i GCP",
-    "description": "Teamets tekniske arbeidsområde i Google Cloud kalles for et prosjekt. <b>Dette kan ikke endres senere.</b> <a href=\"https://statistics-norway.atlassian.net/wiki/x/IICapw\">Se navnekonvensjon</a>",
+    "title": "GitHub repo for infrastrukturkode",
+    "description": "Utledet fra teamnavn ovenfor <i>(kan ikke endres)</i>. ",
+    "help": "<p>Dette blir GitHub-repoet som inneholder infrastukturkode (IaC) for teamet. Her konfigureres hvilke tjenester og GCP-ressurser som blir provisjonert. Merk at dette <b>ikke</b> er det samme som GitHub repo der teamet legger inn egenprodusert kode.</p>",
     "type": "string",
     "deduced": true
   },
