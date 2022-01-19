@@ -2,6 +2,7 @@
   "display_team_name": {
     "title": "Teamnavn",
     "description": "Teamets navn (f. eks: Team Brunost). <b>Dette kan ikke endres senere.</b> Det er OK å bruke store bokstaver og mellomrom her. Brukes kun for visning.",
+    "help": "<p>Navnet på et Dapla-team bør reflektere <em>domene - subdomene</em>. Her er noen eksempler på eksisterende teamnavn:</p><ul><li>skatt-person</li><li>skatt-naering</li><li>kostra-kvm</li></ul>",
     "type": "string"
   },
   "team_name": {
